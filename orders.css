@@ -1,0 +1,11 @@
+.title-info {
+  background-color: rgb(45, 115, 255);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 20px;
+  width: 75%;
+}

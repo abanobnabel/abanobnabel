@@ -1,0 +1,140 @@
+.data-info .box,
+.menu {
+  background-color: gray;
+}
+.data-info,
+.profile,
+.title-info,
+body {
+  display: flex;
+}
+.data-info .box .data,
+table {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #000;
+}
+.profile {
+  align-items: center;
+  gap: 15px;
+}
+.img-box img {
+  width: 100%;
+}
+.img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+.title-info,
+td,
+th {
+  border-radius: 8px;
+}
+.menu {
+  width: 200px;
+  height: 100vh;
+  padding: 20px;
+}
+.title-info,
+ul li a {
+  padding: 10px;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+ul li a {
+  display: block;
+  margin: 10px 0;
+  height: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  gap: 40px;
+  background-color: #121e49;
+  transition: 0.5s;
+}
+.active,
+td:hover,
+ul li a:hover {
+  background-color: #ffffff55;
+  color: #000;
+}
+.logout {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.logout a {
+  background-color: red;
+}
+.data-info .box span,
+ul li a i {
+  font-size: 30px;
+}
+.content {
+  width: 100%;
+  margin: 10px;
+}
+.title-info {
+  background-color: #2d73ff;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.data-info {
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.data-info .box {
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.data-info .box:hover {
+  background-color: #27386f;
+}
+.data-info .box i {
+  font-size: 40px;
+}
+table {
+  width: 100%;
+  border-spacing: 5px;
+}
+td,
+th {
+  background-color: #123;
+  height: 40px;
+}
+th {
+  background-color: #2d73ff;
+}
+.count,
+.price {
+  padding: 6px;
+  border-radius: 6px;
+}
+.price {
+  background-color: green;
+}
+.count {
+  background-color: gold;
+  color: #000;
+}

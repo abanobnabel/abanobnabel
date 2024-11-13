@@ -1,0 +1,618 @@
+@import url(https://fonts.googleapis.com/css2?family=Itim&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap);
+*,
+.Reservation,
+.info,
+body,
+footer {
+  box-sizing: border-box;
+}
+.Testimonial .card p,
+.pages h2 {
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+#text h5,
+.Testimonial .card p,
+.about-us h5,
+.pages h2,
+.pages h3 {
+  font-style: normal;
+}
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+#text h5,
+body {
+  font-weight: 400;
+}
+.about,
+.cards,
+.p-btn,
+.test img {
+  width: 100%;
+}
+.about-us h2,
+.about-us h5,
+.card i,
+.p-btn a,
+.p-btn h1,
+.p-btn p {
+  text-align: left;
+}
+.cards .card,
+.cursor a,
+.info .company a,
+.space a {
+  text-decoration: none;
+}
+.Testimonial h2:hover,
+.Testimonial h3:hover,
+.cursor a:hover,
+.pages h2:hover,
+.pages h3:hover {
+  transform: scale(1.1);
+}
+.contentdiv,
+.space,
+footer {
+  position: relative;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666565;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+* {
+  scroll-behavior: smooth;
+  align-items: center;
+  font-family: Itim, cursive;
+}
+.cards,
+.cursor {
+  display: flex;
+}
+#pic img,
+#text .line,
+.Reservation .book,
+.Testimonial h2,
+.about,
+.book span,
+.contentdiv,
+.cursor a,
+.explore span,
+.foodmenuline .line,
+.info span,
+.space a {
+  display: inline-block;
+}
+#text .line,
+.cursor a {
+  background-color: #ffc720;
+}
+.carsourclass h3,
+.nnn .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.cursor,
+.navbar {
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9))
+      center/cover fixed,
+    url(../images/p7.jpg) center/cover fixed;
+}
+.navbar-brand {
+  margin-left: 20px;
+  font-size: 40px;
+  color: #ffc720;
+}
+#btn-book,
+.Testimonial h3,
+.collapse a,
+.navbar-brand:hover,
+.p-btn p,
+.pages {
+  color: #fff;
+}
+.container-fluid i {
+  font-size: 60px;
+  color: #ffc720;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.collapse {
+  margin-right: 50px;
+}
+.collapse .nav-item,
+.nav-link {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.nav-item .book {
+  text-decoration: none;
+  padding: 15px;
+  background-color: gold;
+  border-radius: 8px;
+}
+.nav-item .order {
+  text-decoration: none;
+  padding: 15px;
+  background-color: rgb(168, 67, 67);
+  border-radius: 8px;
+}
+.collapse .nav-link:hover {
+  color: #ffc720;
+  transform: scale(1.1, 1.1);
+}
+.dropdown-menu {
+  background-color: #8d897d;
+}
+.Reservation,
+.Testimonial,
+footer {
+  background-color: #081234;
+}
+#Home,
+#text .line,
+#text h5,
+.To,
+.card i::before,
+.foodmenuline h5,
+.info .btn:hover,
+.info h3 {
+  color: #ffc720;
+}
+.cursor {
+  padding: 50px;
+  justify-content: space-evenly;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#pic img,
+.about {
+  align-items: center;
+}
+.content,
+.increasenumber {
+  flex-wrap: wrap;
+}
+.p-btn {
+  margin: auto;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.p-btn img {
+  border-radius: 50%;
+  margin-left: 40px !important;
+  animation: 50s linear infinite imgrotate;
+  width: 70%;
+  margin-top: 20px !important;
+}
+@keyframes imgrotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.p-btn h1 {
+  color: #fff;
+  margin-top: 100px;
+  font-family: Nunito, sans-serif;
+}
+.cursor a {
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px !important;
+  transition: 0.5s;
+}
+.cursor a:hover {
+  background-color: gray;
+}
+.cards .card {
+  margin: 30px;
+  width: 25%;
+  padding: 10px !important;
+  height: 300px;
+  transition: transform 0.5s;
+}
+.card i {
+  font-size: 60px;
+  color: #ffbf00 !important;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.card p {
+  font-size: 20px;
+  padding: 10px;
+}
+.card:hover {
+  background: gray;
+  color: #fff;
+}
+.about {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+  display: flex;
+  color: #0f172b;
+}
+.about .about-us,
+.content .sec1 {
+  width: 50%;
+}
+.about-us .line,
+.explore span,
+.foodmenuline .line,
+.info span {
+  background-color: #ffc720;
+  width: 40px;
+  height: 3px;
+}
+.about .about-us .p1,
+.p2 {
+  width: 50%;
+  display: flex;
+  margin-right: 40px;
+}
+.content,
+.increasenumber,
+.sec1 .sec,
+.space {
+  width: 100%;
+  display: flex;
+}
+#img1 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+#img2 {
+  margin-top: 40px;
+  margin-left: 5px;
+}
+#img3 {
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+#img4 {
+  margin-left: 15px;
+  margin-top: 9px;
+}
+#text,
+.foodmenuline h5 {
+  margin-top: 20px !important;
+}
+#text {
+  margin-left: 100px !important;
+  right: 5px;
+}
+.about-us h5 {
+  font-family: "Playwrite GB S", serif;
+  font-size: 25px;
+  font-weight: 10px;
+}
+.about-us h2 {
+  font-size: 50px;
+  color: #0f172b;
+}
+.about-us p,
+.increasenumber {
+  text-align: left !important;
+}
+.Contact1,
+.Testimonial,
+.Testimonial h2,
+.Testimonial h3,
+.carsourclass,
+.explore,
+.foodmenuline,
+.info h4,
+.pages h2,
+.pages h3,
+.space {
+  text-align: center;
+}
+.foodmenuline h3 {
+  font-size: 50px;
+  color: #081234;
+}
+.space {
+  justify-content: center;
+}
+.space a {
+  width: 33%;
+  color: #081234;
+  margin-right: 40px;
+}
+.space i {
+  color: #ffc720;
+  font-size: 30px;
+}
+.Testimonial h2,
+.Testimonial h3,
+.Testimonial h4,
+.pages h3 {
+  font-weight: 400;
+  font-size: xx-large;
+  transition: transform 1s;
+}
+.content {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.sec1 .sec {
+  margin-left: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.sec img {
+  width: 100px;
+  height: 100px;
+}
+.sec .img {
+  width: 20%;
+  margin-left: 60px;
+}
+.sec .con {
+  width: 70%;
+}
+.Reservation,
+.info {
+  display: flex;
+}
+.contentdiv span {
+  position: absolute;
+  margin-left: 220px !important;
+  color: #ffc720;
+}
+.content h2,
+small {
+  color: #081234;
+}
+footer {
+  background-attachment: fixed;
+  width: 100%;
+  margin-bottom: 0;
+}
+.info {
+  flex-wrap: wrap;
+  padding-left: 20px !important;
+  text-align: left;
+  margin-top: 15px !important;
+}
+.info h4 {
+  color: #fff;
+  margin-bottom: 5px;
+  margin-left: 10px !important;
+}
+.info .company {
+  width: 23%;
+  color: #fff;
+}
+.info .company a {
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+}
+.info .contact {
+  width: 23%;
+  color: #fff;
+  margin-top: 60px;
+}
+.info .open {
+  position: absolute;
+  width: 23%;
+  color: #fff;
+  margin-left: 50%;
+  margin-bottom: 80px;
+}
+.info .news {
+  position: absolute;
+  width: 23%;
+  color: #fff;
+  margin-left: 75%;
+  margin-bottom: 110px;
+}
+.Reservation .book,
+.Reservation .video {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.info .contact .btn {
+  border-radius: 45%;
+  margin-right: 10px;
+}
+.info hr {
+  background-color: gray;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.pages h3 {
+  font-family: Pacifico, cursive;
+  color: #ffc720;
+}
+.pages h2 {
+  font-family: "Playwrite GB S", serif;
+  color: #e0e0e0;
+  transition: transform 1s;
+}
+.Testimonial h2,
+.Testimonial h3,
+.Testimonial h4 {
+  font-family: Pacifico, cursive;
+  font-style: normal;
+}
+.Reservation {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Reservation .video {
+  width: 35%;
+  margin-left: 20px !important;
+}
+.Reservation .book {
+  width: 60%;
+}
+.book span {
+  width: 40px;
+  height: 3px;
+  background-color: #ffc720;
+}
+.Testimonial {
+  margin-top: 30px;
+}
+.Testimonial h2 {
+  color: #ffc720;
+  margin-top: 20px;
+}
+.Testimonial .test {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Testimonial .test .card {
+  width: 30%;
+  background-color: #f5f5f5;
+  color: #000;
+  border: solid #000;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.Testimonial img {
+  background-color: #1e2538;
+  margin-top: 50px;
+  padding: 50px;
+  width: 100%;
+  height: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+.Testimonial img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+.Testimonial h4 {
+  color: #000;
+}
+.Testimonial h4:hover {
+  color: #1e2538;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.Testimonial .card p {
+  font-family: "Playwrite GB S", cursive;
+  font-weight: 20px;
+  position: relative;
+  left: 128%;
+  color: #788198;
+  transition: left 1s 2s;
+  overflow: hidden;
+}
+.Testimonial .card:hover p {
+  color: #1e2538;
+  left: 0;
+  transition: left 0.5s;
+}
+.carsourclass {
+  background: linear-gradient(to left top, rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.7))
+      center/cover fixed,
+    url(../images/p7.jpg) center/cover fixed;
+  display: flex;
+  height: 100vh;
+  color: #f8f7f6;
+  align-items: center;
+  padding-left: 20px;
+}
+.Contact1,
+.Contact2,
+.Contact3,
+.Contact4 {
+  background-image: url(../images/Fish4.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carsourclass h3 {
+  color: orange;
+  top: 50%;
+  left: 50%;
+}
+.explore {
+  margin: 20px;
+}
+.explore .serv {
+  font-size: 60px;
+  color: #081234;
+}
+.Contact1 {
+  padding: 50px;
+  color: #fff;
+}
+.Contact1 h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.Contact1 h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.Contact-Us {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+.Contact2,
+.Contact3,
+.Contact4 {
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.Contact2 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.Contact2 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.Contact3 form {
+  display: flex;
+  flex-direction: column;
+}
+.Contact3 .input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.Contact3 button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Contact3 button:hover {
+  background-color: #0056b3;
+}
+.Contact4 iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}

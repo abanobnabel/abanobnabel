@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+    <!-- <link rel="stylesheet" href="styles/bootstrap.min.css" /> -->
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img src="images/Fish6.jpg" alt="" />
+          </div>
+          <h2>Admin</h2>
+        </li>
+        <li>
+          <a href="" class="active">
+            <i class="fas fa-home"></i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-user-group"></i>
+            <p>Clients</p>
+          </a>
+        </li>
+        <li>
+          <a href="booking.html">
+            <i class="fas fa-table"></i>
+            <p>Booking</p>
+          </a>
+        </li>
+        <li>
+          <a href="onlineorders.html">
+            <i class="fas fa-chart-pie"></i>
+            <p>Online Orders</p>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="posts.html">
+            <i class="fas fa-pen"></i>
+            <p>Menu Update</p>
+          </a>
+        </li> -->
+        <li>
+          <a href="">
+            <i class="fas fa-star"></i>
+            <p>Favoriets</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-cog"></i>
+            <p>Settings</p>
+          </a>
+        </li>
+        <li class="logout">
+          <a href="">
+            <i class="fas fa-sign-out"></i>
+            <p>Log Out</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="title-info">
+        <p>Dashboard</p>
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <div class="data-info">
+        <div class="box">
+          <i class="fas fa-user"></i>
+          <div class="data">
+            <p>Users</p>
+            <span>1000</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-pen"></i>
+          <div class="data">
+            <p>Posts</p>
+            <span>5000</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-table"></i>
+          <div class="data">
+            <p>Products</p>
+            <span>750</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-dollar"></i>
+          <div class="data">
+            <p>Profits</p>
+            <span>10000</span>
+          </div>
+        </div>
+      </div>
+      <div class="title-info">
+        <p>Orders</p>
+        <i class="fas fa-table"></i>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Order Details</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody class="orderstable">
+          <tr>
+            <td>0</td>
+            <td>Hassan</td>
+            <td>asd123@example.com</td>
+            <td>0123456789</td>
+            <td>Minya</td>
+            <td>2 kilo of Sea Food, 1 kilo of Bolty</td>
+            <td>
+              <button class="btn btn-warning" onclick="EditProduct(0)">
+                Update
+              </button>
+            </td>
+            <td>
+              <button class="btn btn-danger" onclick="DeleteProduct(0)">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/orders.js"></script>
+  </body>
+</html>
