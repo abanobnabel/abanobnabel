@@ -1,0 +1,252 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nemo Fish Restaurant</title>
+        <link rel="icon" href="images/Fish1.jpg" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+          <div class="container-fluid">
+            <i class="fa-solid fa-utensils"></i>
+            <a class="navbar-brand" href="#">Nemo Fish Restaurant</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" id="Home" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="pages-link"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >Pages</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Booking</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="ourteam.html">Our Team</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li> -->
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg"
+                    id="btn-book"
+                  >
+                    Book A Table
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="carsourclass" id="Home">
+          <div class="foodcard">
+            <h1 class="display-3 text-white mb-3 m-auto animated slideInDown">
+              BOOKING
+            </h1>
+            <h3>
+              <span class="capital">Home/</span
+              ><span class="capital">PAGES/</span
+              ><span class="capital" style="color: white">BOOKING</span>
+            </h3>
+          </div>
+        </section>
+        <section class="reservation">
+          <section class="pages">
+            <h3>Reservation</h3>
+            <h2>Book A Table Online</h2>
+          </section>
+          <div class="w-75 m-auto py-5">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="pname"
+                placeholder="Your Name"
+              />
+              <label for="pname">Your Name</label>
+            </div>
+          </div>
+          <div class="w-75 m-auto py-5">
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+              />
+              <label for="email">Your Email</label>
+            </div>
+          </div>
+
+          <div class="w-75 m-auto py-5">
+            <div
+              class="form-floating date"
+              id="date3"
+              data-target-input="nearest"
+            >
+              <input
+                type="datetime-local"
+                class="form-control datetimepicker-input"
+                id="datetime"
+                placeholder="Date &amp; Time"
+              />
+              <label for="datetime">Date &amp; Time</label>
+            </div>
+          </div>
+          <div class="w-75 m-auto py-5">
+            <div class="form-floating">
+              <select class="form-select" id="select1">
+                <option value="1">People 1</option>
+                <option value="2">People 2</option>
+                <option value="3">People 3</option>
+              </select>
+              <label for="select1">No Of People</label>
+            </div>
+          </div>
+          <div class="w-75 m-auto py-5">
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Special Request"
+                id="message"
+                style="height: 100px"
+              ></textarea>
+              <label for="message">Special Request</label>
+            </div>
+          </div>
+
+          <div class="w-75 m-auto py-5 text-center">
+            <button class="btn btn-outline-danger" onclick="AddProduct()">
+              Book Now
+            </button>
+          </div>
+
+          <dotlottie-player
+            src="https://lottie.host/9ceb9caa-fc55-46d2-bb87-d757d01e1fa2/RlzPurLYj2.json"
+            background="transparent"
+            class="w-75 m-auto py-5 text-center"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </section>
+        <footer>
+          <div class="info">
+            <div class="company">
+              <h3>Company<span></span></h3>
+              <a href="about.html">About Us</a><br />
+              <a href="#">Contact Us</a><br />
+              <a href="Reservation.html">Reservation</a><br />
+              <a href="#">Privacy Policy</a><br />
+              <a href="#">Terms & Condition</a><br />
+            </div>
+            <div class="contact">
+              <h3>Contact <span></span></h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 28 Street, Abdel Moniem
+                Reyad, Minya, Egypt
+              </p>
+              <p><i class="fa-solid fa-phone"></i> +00201010282487</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i> Moataz.Mahmoud090@gmail.com
+              </p>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="open">
+              <h3>Opening <span></span></h3>
+              <p>
+                Saturday - Thursday:<br />
+                10AM - 11PM
+              </p>
+              <p>
+                Friday:<br />
+                2PM - 12AM
+              </p>
+            </div>
+            <div class="news">
+              <h3>Newsletter <span></span></h3>
+              <p>
+                If you have any comments or suggestions, feel free to send us
+                your feedback.
+              </p>
+              <input type="email" placeholder="Your email address" />
+              <button type="button" class="btn btn-warning btn-outline-light">
+                SignUp
+              </button>
+            </div>
+            <hr />
+            <h4>
+              &copy; Nemo, All Rights Reserved. Designed by (Moataz, Nemr,
+              Nancy, Meki, Bebo)
+            </h4>
+          </div>
+        </footer>
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+        <script src="scripts/script.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

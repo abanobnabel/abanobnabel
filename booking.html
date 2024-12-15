@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/orders.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="title-info">
+      <p>Booking</p>
+      <i class="fas fa-table"></i>
+    </div>
+    <div class="w-75 m-auto py-5">
+      <input
+        onkeyup="SearchProducts(this.value)"
+        type="text"
+        id="search-input"
+        class="form-control"
+        placeholder="Search...."
+      />
+    </div>
+    <div class="w-75 m-auto py-5">
+      <div class="mb-4">
+        <label for="pname" class="mb-3 fs-3 text-info">Your Name</label>
+        <input type="text" id="pname" class="form-control" />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="mb-3 fs-3 text-info">Your Email</label>
+        <input type="email" id="email" class="form-control" />
+      </div>
+      <div class="mb-4">
+        <label for="datetime" class="mb-3 fs-3 text-info"
+          >Date &amp; Time</label
+        >
+        <input type="datetime-local" id="datetime" class="form-control" />
+      </div>
+      <div class="mb-4">
+        <label for="select1" class="mb-3 fs-3 text-info">No. Of People</label>
+        <select class="form-select" id="select1">
+          <option value="1">People 1</option>
+          <option value="2">People 2</option>
+          <option value="3">People 3</option>
+          <option value="4">People 4</option>
+          <option value="5">People 5</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <textarea
+          class="form-control"
+          placeholder="Special Request"
+          id="message"
+          style="height: 100px"
+        ></textarea>
+      </div>
+      <div class="mb-4">
+        <button
+          class="btn btn-outline-info"
+          id="btnAddUpdate"
+          onclick="AddProduct()"
+        >
+          Book Now
+        </button>
+      </div>
+    </div>
+    <div class="mb-4 p-5 py-3">
+      <a href="dashboard.html"
+        ><button class="btn btn-outline-primary">Back</button></a
+      >
+    </div>
+    <table class="table w-75 m-auto py-5 table table-hover">
+      <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Date & Time</th>
+        <th>No. of People</th>
+        <th>Notes</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="tablebody">
+        <tr>
+          <td>0</td>
+          <td>Abdo</td>
+          <td>Abdo1234@example.com</td>
+          <td>
+            8/11/2024 <br />
+            10:00 AM
+          </td>
+          <td>3</td>
+          <td>Tomorrow</td>
+          <td>
+            <button class="btn btn-outline-warning" onclick="EditProduct(0)">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-outline-danger" onclick="DeleteProduct(0)">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
